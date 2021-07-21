@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -31,6 +32,7 @@ class InsertionSortTest {
         assertArrayEquals(sorted, shuffled);
     }
 
+    @Disabled
     @Test 
     void seriousTest() {
         createInput(1_000_000);
