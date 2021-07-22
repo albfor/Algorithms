@@ -40,7 +40,7 @@ public class MergeSort {
         }
     }
 
-    static int[] createTempArray(int[] input, int start, int size) {
+    private static int[] createTempArray(int[] input, int start, int size) {
         int[] temp = new int[size];
         for (int i = 0; i < size; i++) {
             temp[i] = input[start + i];
