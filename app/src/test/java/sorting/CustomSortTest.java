@@ -40,6 +40,13 @@ class CustomSortTest {
     }
 
     @Test
+    void seriousCustomSortTestk8() {
+        createInput(1_000_000);        
+        CustomSort.sort(actual, 0, actual.length - 1, 8);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
     void seriousCustomSortTestk15() {
         createInput(1_000_000);        
         CustomSort.sort(actual, 0, actual.length - 1, 15);
@@ -54,9 +61,30 @@ class CustomSortTest {
     }
 
     @Test
-    void seriousCustomSortTest() {
+    void seriousCustomSortTestk12() {
         createInput(1_000_000);        
         CustomSort.sort(actual, 0, actual.length - 1, 12);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void seriousCustomSortTestk30() {
+        createInput(1_000_000);        
+        CustomSort.sort(actual, 0, actual.length - 1, 30);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void seriousCustomSortTestk40() {
+        createInput(1_000_000);        
+        CustomSort.sort(actual, 0, actual.length - 1, 40);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void seriousCustomSortTestk50() {
+        createInput(1_000_000);        
+        CustomSort.sort(actual, 0, actual.length - 1, 50);
         assertArrayEquals(expected, actual);
     }
 }
