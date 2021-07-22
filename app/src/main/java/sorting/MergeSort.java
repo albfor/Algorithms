@@ -8,7 +8,7 @@ public class MergeSort {
         }
     }
 
-    private static void merge(int[] input, int l, int m, int r) {
+    static void merge(int[] input, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
         int[] L = createTempArray(input, l, n1);
@@ -40,7 +40,7 @@ public class MergeSort {
         }
     }
 
-    private static int[] createTempArray(int[] input, int start, int size) {
+    static int[] createTempArray(int[] input, int start, int size) {
         int[] temp = new int[size];
         for (int i = 0; i < size; i++) {
             temp[i] = input[start + i];
