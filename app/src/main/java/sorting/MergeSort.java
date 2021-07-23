@@ -1,3 +1,5 @@
+package sorting;
+
 public class MergeSort {
     public static void sort(int[] input, int l, int r) {
         if (l < r) {
@@ -42,9 +44,7 @@ public class MergeSort {
 
     private static int[] createTempArray(int[] input, int start, int size) {
         int[] temp = new int[size];
-        for (int i = 0; i < size; i++) {
-            temp[i] = input[start + i];
-        }
+        System.arraycopy(input, start, temp, 0, size);
         return temp;
     }
 }

@@ -1,3 +1,5 @@
+package sorting;
+
 public class CustomSort {
     public static void sort(int[] input, int l, int r, int insertionSortSize) {
         if (r - l < insertionSortSize) {

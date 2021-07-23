@@ -1,3 +1,5 @@
+package sorting;
+
 public class InsertionSort {
     /**
      * Sorts the entire array
