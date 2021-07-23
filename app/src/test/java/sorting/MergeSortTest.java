@@ -1,7 +1,9 @@
 package sorting;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -21,22 +23,22 @@ class MergeSortTest {
 
     @Test
     void simpleMergeSortTest() {
-        createInput(10);        
-        MergeSort.sort(actual, 0, actual.length - 1);
+        createInput(10);
+        MergeSort.sort(actual);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void advancedMergeSortTest() {
-        createInput(10_000);        
-        MergeSort.sort(actual, 0, actual.length - 1);
+        createInput(10_000);
+        MergeSort.sort(actual);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousMergeSortTest() {
-        createInput(1_000_000);        
-        MergeSort.sort(actual, 0, actual.length - 1);
+        createInput(1_000_000);
+        MergeSort.sort(actual);
         assertArrayEquals(expected, actual);
     }
 }

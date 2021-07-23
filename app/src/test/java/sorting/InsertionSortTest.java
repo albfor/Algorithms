@@ -1,10 +1,12 @@
 package sorting;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.Collections;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class InsertionSortTest {
     private int[] sorted;
@@ -35,7 +37,7 @@ class InsertionSortTest {
     }
 
     @Disabled
-    @Test 
+    @Test
     void seriousTest() {
         createInput(1_000_000);
         InsertionSort.sort(shuffled);

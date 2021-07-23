@@ -9,14 +9,14 @@ public class InsertionSort {
     }
 
     /**
-     * Sorts between index l and r
+     * Sorts between index start and end
      */
-    public static void sort(int[] input, int l, int r) {
-        for (int i = l + 1; i <= r; i++) {
+    public static void sort(int[] input, int startIndex, int endIndex) {
+        for (int i = startIndex + 1; i <= endIndex; i++) {
             int key = input[i];
             int j = i - 1;
 
-            while (j >= l && input[j] > key) {
+            while (j >= startIndex && input[j] > key) {
                 input[j + 1] = input[j];
                 j--;
             }
