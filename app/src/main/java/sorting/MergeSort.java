@@ -13,8 +13,11 @@ public class MergeSort {
     static void merge(int[] input, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
-        int[] L = createTempArray(input, l, n1);
-        int[] R = createTempArray(input, m + 1, n2);
+
+        int[] L = new int[n1];
+        System.arraycopy(input, l, L, 0, n1);
+        int[] R = new int[n2];
+        System.arraycopy(input, m + 1, R, 0, n2);
         int i = 0, j = 0;
         int k = l;
 
@@ -40,12 +43,6 @@ public class MergeSort {
             j++;
             k++;
         }
-    }
-
-    private static int[] createTempArray(int[] input, int start, int size) {
-        int[] temp = new int[size];
-        System.arraycopy(input, start, temp, 0, size);
-        return temp;
     }
 }
 
