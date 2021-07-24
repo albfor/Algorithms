@@ -1,7 +1,6 @@
 package sorting;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -44,49 +43,49 @@ class CustomSortTest {
 
     @Test
     void seriousCustomSortTestk8() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,8);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk15() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,15);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk25() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,25);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk12() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,12);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk30() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,30);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk40() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,40);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void seriousCustomSortTestk50() {
-        createInput(1_000_000);
+        createInput(10_000_000);
         CustomSort.sort(actual,50);
         assertArrayEquals(expected, actual);
     }

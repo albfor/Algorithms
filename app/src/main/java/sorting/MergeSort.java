@@ -4,6 +4,7 @@ public class MergeSort {
     public static void sort(int[] input) {
         sort(input, 0, input.length - 1);
     }
+
     private static void sort(int[] input, int start, int end) {
         if (start < end) {
             int m = start + (end - start) / 2;

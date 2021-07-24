@@ -11,12 +11,12 @@ public class InsertionSort {
     /**
      * Sorts between index start and end
      */
-    public static void sort(int[] input, int startIndex, int endIndex) {
-        for (int i = startIndex + 1; i <= endIndex; i++) {
+    public static void sort(int[] input, int start, int end) {
+        for (int i = start + 1; i <= end; i++) {
             int key = input[i];
             int j = i - 1;
 
-            while (j >= startIndex && input[j] > key) {
+            while (j >= start && input[j] > key) {
                 input[j + 1] = input[j];
                 j--;
             }
